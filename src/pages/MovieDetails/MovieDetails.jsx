@@ -61,10 +61,14 @@ const MovieDetails = () => {
       <div>
         <InfoLinksList>
           <li>
-            <InfoLink to="cast">Cast</InfoLink>
+            <InfoLink to="cast" state={{ from: backLinkRef }}>
+              Cast
+            </InfoLink>
           </li>
           <li>
-            <InfoLink to="reviews">Reviews</InfoLink>
+            <InfoLink to="reviews" state={{ from: backLinkRef }}>
+              Reviews
+            </InfoLink>
           </li>
         </InfoLinksList>
         <Outlet />
